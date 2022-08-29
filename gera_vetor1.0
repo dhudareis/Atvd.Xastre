@@ -49,8 +49,22 @@ printf("Menor = %d", menor);
 
 
 int main() {
+int *v;
+int i;
+float media, mediana;
 
+gera_vetor(v);
+for(i=0; i<10;i++) {
+	printf(" %5d", v[i]); } 
+	
+imprime_vetor(v);
 
+media=calc_media(v);
+printf("\n\nMedia do vetor = %.2f", media);	
+mediana=calc_mediana(v);
+printf("\nMediana do vetor = %.2f", mediana);
 
-return 0;
+maior_menor(v);
+
+	return 0;
 }
